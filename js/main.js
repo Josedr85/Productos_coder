@@ -1,90 +1,160 @@
-// Productos disponibles
-const productos = [
-  { id: 1, nombre: "Teclado", precio: 150 },
-  { id: 2, nombre: "Auriculares", precio: 250 },
-  { id: 3, nombre: "Smartwatch", precio: 300 },
-  { id: 4, nombre: "Tablet", precio: 600 },
-  { id: 5, nombre: "Smartphone", precio: 800 },
-  { id: 6, nombre: "Laptop", precio: 1200 },
-];
+let productos = [];
 
-// Recuperar carrito desde localStorage o inicializar vacío
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+fetch("./js/productos.json")
+  .then((response) => response.json())
+  .then((data) => {
+    productos = data;
+    cargarProductos(productos);
+  });
 
-// Renderizar productos en pantalla
-function mostrarProductos() {
-  const contenedor = document.getElementById("productos");
-  contenedor.innerHTML = "";
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
+const tituloPrincipal = document.querySelector("#titulo-principal");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const numerito = document.querySelector("#numerito");
+const inputBuscar = document.getElementById("input-buscar");
+const btnBuscar = document.getElementById("btn-buscar");
 
-  productos.forEach((producto) => {
+botonesCategorias.forEach((boton) =>
+  boton.addEventListener("click", () => {
+    aside.classList.remove("aside-visible");
+  })
+);
+
+function cargarProductos(productosElegidos) {
+  contenedorProductos.innerHTML = "";
+
+  productosElegidos.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add("producto");
     div.innerHTML = `
-      <h3>${producto.nombre}</h3>
-      <p>💲 ${producto.precio}</p>
-      <button data-id="${producto.id}">Agregar</button>
-    `;
-    contenedor.appendChild(div);
+            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">${producto.titulo}</h3>
+
+                <p class="producto-precio">$${producto.precio}</p>
+                <button class="producto-agregar" id="${producto.id}">Agregar al carrito</button>
+            </div>
+        `;
+
+    contenedorProductos.append(div);
   });
 
-  // Eventos de agregar al carrito
-  const botones = document.querySelectorAll("#productos button");
-  botones.forEach((boton) => {
-    boton.addEventListener("click", () => {
-      const id = parseInt(boton.getAttribute("data-id"));
-      agregarAlCarrito(id);
-    });
+  actualizarBotonesAgregar();
+}
+
+function buscarProductos() {
+  terminoBusqueda = inputBuscar.value.toLowerCase().trim();
+  renderizarProductos();
+}
+
+function renderizarProductos() {
+  // Limpia el contenedor antes de renderizar
+  contenedorProductos.innerHTML = "";
+
+  // Filtra productos según el término de búsqueda
+  const productosFiltrados = productos.filter((producto) => {
+    if (terminoBusqueda === "") return true;
+    // Busca coincidencias en nombre o descripción
+    return (
+      producto.nombre.toLowerCase().includes(terminoBusqueda) ||
+      producto.descripcion.toLowerCase().includes(terminoBusqueda)
+    );
+  });
+
+botonesCategorias.forEach((boton) => {
+  boton.addEventListener("click", (e) => {
+    botonesCategorias.forEach((boton) => boton.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+
+    if (e.currentTarget.id != "todos") {
+      const productoCategoria = productos.find(
+        (producto) => producto.categoria.id === e.currentTarget.id
+      );
+      tituloPrincipal.innerText = productoCategoria.categoria.nombre;
+      const productosBoton = productos.filter(
+        (producto) => producto.categoria.id === e.currentTarget.id
+      );
+      cargarProductos(productosBoton);
+    } else {
+      tituloPrincipal.innerText = "Todos los productos";
+      cargarProductos(productos);
+    }
+  });
+});
+
+
+
+
+function actualizarBotonesAgregar() {
+  botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+  botonesAgregar.forEach((boton) => {
+    boton.addEventListener("click", agregarAlCarrito);
   });
 }
 
-// Renderizar carrito
-function mostrarCarrito() {
-  const lista = document.getElementById("carrito");
-  lista.innerHTML = "";
+let productosEnCarrito;
 
-  carrito.forEach((item, index) => {
-    const li = document.createElement("li");
-    li.textContent = `${item.nombre} - $${item.precio}`;
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
-    const botonEliminar = document.createElement("button");
-    botonEliminar.textContent = "Eliminar";
-    botonEliminar.addEventListener("click", () => {
-      eliminarDelCarrito(index);
-    });
-
-    li.appendChild(botonEliminar);
-    lista.appendChild(li);
-  });
-
-  mostrarTotal();
+if (productosEnCarritoLS) {
+  productosEnCarrito = JSON.parse(productosEnCarritoLS);
+  actualizarNumerito();
+} else {
+  productosEnCarrito = [];
 }
 
-// Mostrar total
-function mostrarTotal() {
-  const total = carrito.reduce((acum, item) => acum + item.precio, 0);
-  document.getElementById("total").textContent = `Total: $${total}`;
+function agregarAlCarrito(e) {
+  Toastify({
+    text: "Producto agregado",
+    duration: 3000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #4b33a8, #785ce9)",
+      borderRadius: "2rem",
+      textTransform: "uppercase",
+      fontSize: ".75rem",
+    },
+    offset: {
+      x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+      y: "1.5rem", // vertical axis - can be a number or a string indicating unity. eg: '2em'
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
+
+  const idBoton = e.currentTarget.id;
+  const productoAgregado = productos.find(
+    (producto) => producto.id === idBoton
+  );
+
+  if (productosEnCarrito.some((producto) => producto.id === idBoton)) {
+    const index = productosEnCarrito.findIndex(
+      (producto) => producto.id === idBoton
+    );
+    productosEnCarrito[index].cantidad++;
+  } else {
+    productoAgregado.cantidad = 1;
+    productosEnCarrito.push(productoAgregado);
+  }
+
+  actualizarNumerito();
+
+  localStorage.setItem(
+    "productos-en-carrito",
+    JSON.stringify(productosEnCarrito)
+  );
 }
 
-// Agregar producto al carrito
-function agregarAlCarrito(id) {
-  const producto = productos.find((p) => p.id === id);
-  carrito.push(producto);
-  guardarCarrito();
-  mostrarCarrito();
+function actualizarNumerito() {
+  let nuevoNumerito = productosEnCarrito.reduce(
+    (acc, producto) => acc + producto.cantidad,
+    0
+  );
+  numerito.innerText = nuevoNumerito;
 }
 
-// Eliminar producto del carrito
-function eliminarDelCarrito(indice) {
-  carrito.splice(indice, 1);
-  guardarCarrito();
-  mostrarCarrito();
-}
 
-// Guardar carrito en localStorage
-function guardarCarrito() {
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-}
-
-// Inicializar
-mostrarProductos();
-mostrarCarrito();
