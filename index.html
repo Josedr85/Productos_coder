@@ -2,22 +2,104 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Ecommerce Simple</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section>
-      <div class="productos">
-        <h1>🛍️ Mi Tienda</h1>
-        <div id="productos"></div>
+    <header class="header">
+      <div class="logo">TechShop</div>
+      <div class="buscador">
+        <input
+          type="text"
+          id="input-buscar"
+          placeholder="Buscar productos..."
+        />
+        <button id="btn-buscar"><i class="bi bi-search"></i></button>
       </div>
+    </header>
+    <div class="wrapper">
+      <aside>
+        <nav>
+          <ul class="menu">
+            <li>
+              <button id="todos" class="boton-menu boton-categoria active">
+                <i class="bi bi-hand-index-thumb-fill"></i> Todos los productos
+              </button>
+            </li>
+            <li>
+              <button id="smartphone" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i> Smartphone
+              </button>
+            </li>
+            <li>
+              <button id="notebook" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i>Notebook
+              </button>
+            </li>
+            <li>
+              <button id="tablet" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i> Tablet
+              </button>
+            </li>
+            <li>
+              <button id="auricular" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i>Auricular
+              </button>
+            </li>
+            <li>
+              <button id="smartwatch" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i> Smartwatch
+              </button>
+            </li>
+            <li>
+              <button id="teclado" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i> Teclado
+              </button>
+            </li>
+            <li>
+              <button id="mouse" class="boton-menu boton-categoria">
+                <i class="bi bi-hand-index-thumb"></i> Mouse
+              </button>
+            </li>
 
-      <div class="carrito">
-        <h2>🛒 Carrito</h2>
-        <ul id="carrito"></ul>
-        <p id="total">Total: $0</p>
-      </div>
-    </section>
-    <script src="./js/script.js"></script>
+            <li>
+              <a class="boton-menu boton-carrito" href="./carrito.html">
+                <i class="bi bi-cart-fill"></i> Carrito
+                <span id="numerito" class="numerito">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section>
+          <h2 class="titulo-principal" id="titulo-principal">
+            Todos los productos
+          </h2>
+          <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carrito.js"></script>
   </body>
 </html>
