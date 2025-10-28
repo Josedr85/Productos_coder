@@ -1,0 +1,282 @@
+[
+  {
+    "id": "smartphone-01",
+    "titulo": "Samsung Galaxy S25 Ultra",
+    "imagen": "../imagenes/smartphone1.png",
+    "categoria": {
+      "nombre": "Smartphone",
+      "id": "smartphone"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartphone-02",
+    "titulo": "Xiaomi 14 Ultra",
+    "imagen": "../imagenes/smartphone2.png",
+    "categoria": {
+      "nombre": "Smartphone",
+      "id": "smartphone"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartphone-03",
+    "titulo": "Iphone 17 Pro Max",
+    "imagen": "../imagenes/smartphone3 (1).png",
+    "categoria": {
+      "nombre": "Smartphone",
+      "id": "smartphone"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartphone-04",
+    "titulo": "Motorola Edge 50",
+    "imagen": "../imagenes/smartphone4 .png",
+    "categoria": {
+      "nombre": "Smartphone",
+      "id": "smartphone"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "notebook-01",
+    "titulo": "Asus Vivobook GO 15",
+    "imagen": "../imagenes/notebook1.png",
+    "categoria": {
+      "nombre": "Notebook",
+      "id": "notebook"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "notebook-02",
+    "titulo": "Lenovo Ideapad Slim 3",
+    "imagen": "../imagenes/notebook2.png",
+    "categoria": {
+      "nombre": "Notebook",
+      "id": "notebook"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "notebook-03",
+    "titulo": "HP 15 FD0032la",
+    "imagen": "../imagenes/notebook3 (1).png",
+    "categoria": {
+      "nombre": "Notebook",
+      "id": "notebook"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "notebook-04",
+    "titulo": "Macbook Pro 16",
+    "imagen": "../imagenes/notebook4.png",
+    "categoria": {
+      "nombre": "Notebook",
+      "id": "notebook"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "tablet-01",
+    "titulo": "Samsung Galaxy Tab s10 FE+",
+    "imagen": "../imagenes/tablet1.png",
+    "categoria": {
+      "nombre": "Tablet",
+      "id": "tablet"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "tablet-02",
+    "titulo": "Lenovo Tab M11",
+    "imagen": "../imagenes/tablet2.png",
+    "categoria": {
+      "nombre": "Tablet",
+      "id": "tablet"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "tablet-03",
+    "titulo": "Xiaomi Redmi Pad Pro",
+    "imagen": "../imagenes/tablet3.png",
+    "categoria": {
+      "nombre": "Tablet",
+      "id": "tablet"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "tablet-04",
+    "titulo": "Ipad Pro",
+    "imagen": "../imagenes/tablet4.png",
+    "categoria": {
+      "nombre": "Tablet",
+      "id": "tablet"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "auricular-01",
+    "titulo": "Redragon H260 Hylas",
+    "imagen": "../imagenes/auricular1.png",
+    "categoria": {
+      "nombre": "Auricular",
+      "id": "auricular"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "auricular-02",
+    "titulo": "Hiperex Cloud Stringer Core",
+    "imagen": "../imagenes/auricular2 (1).png",
+    "categoria": {
+      "nombre": "Auricular",
+      "id": "auricular"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "auricular-03",
+    "titulo": "Corsair Gamer HS35",
+    "imagen": "../imagenes/auricular3.png",
+    "categoria": {
+      "nombre": "Auricular",
+      "id": "auricular"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "auricular-04",
+    "titulo": "Sony Super Bass",
+    "imagen": "../imagenes/auricular4.png",
+    "categoria": {
+      "nombre": "Auricular",
+      "id": "auricular"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartwatch-01",
+    "titulo": "Samsung Galaxy Watch 8",
+    "imagen": "../imagenes/smartwatch1.png",
+    "categoria": {
+      "nombre": "Smartwatch",
+      "id": "smartwatch"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartwatch-02",
+    "titulo": "Xiaomi Redmi Watch 5",
+    "imagen": "../imagenes/smartwatch2.png",
+    "categoria": {
+      "nombre": "Smartwatch",
+      "id": "smartwatch"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartwatch-03",
+    "titulo": "Huawei Watch Fit 4 Pro",
+    "imagen": "../imagenes/smartwatch3.png",
+    "categoria": {
+      "nombre": "Smartwatch",
+      "id": "smartwatch"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "smartwatch-04",
+    "titulo": "Apple Watch Ultra 2",
+    "imagen": "../imagenes/smartwatch4.png",
+    "categoria": {
+      "nombre": "Smartwatch",
+      "id": "smartwatch"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "teclado-01",
+    "titulo": "Redragon Kumara K552",
+    "imagen": "../imagenes/teclado1.png",
+    "categoria": {
+      "nombre": "Teclado",
+      "id": "teclado"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "teclado-02",
+    "titulo": "Hiperex Alloy Origins Core",
+    "imagen": "../imagenes/teclado2.png",
+    "categoria": {
+      "nombre": "Teclado",
+      "id": "teclado"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "teclado-03",
+    "titulo": "Corasair Cherry Mx Speed",
+    "imagen": "../imagenes/teclado3.png",
+    "categoria": {
+      "nombre": "Teclado",
+      "id": "teclado"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "teclado-04",
+    "titulo": "Logitech Serie G Prodigy G213",
+    "imagen": "../imagenes/teclado4.png",
+    "categoria": {
+      "nombre": "Teclado",
+      "id": "teclado"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "mouse-01",
+    "titulo": "Logitech Series Mx Master 3s",
+    "imagen": "../imagenes/mouse1 (1).png",
+    "categoria": {
+      "nombre": "Mouse",
+      "id": "mouse"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "mouse-02",
+    "titulo": "Redragon Griffin M607 ",
+    "imagen": "../imagenes/mouse2.png",
+    "categoria": {
+      "nombre": "Mouse",
+      "id": "mouse"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "mouse-03",
+    "titulo": "Corsair Scimitar RGB Elite",
+    "imagen": "../imagenes/mouse3.png",
+    "categoria": {
+      "nombre": "Mouse",
+      "id": "mouse"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "mouse-04",
+    "titulo": "MSI Forge GM300",
+    "imagen": "../imagenes/mouse4.png",
+    "categoria": {
+      "nombre": "Mouse",
+      "id": "mouse"
+    },
+    "precio": 1000
+  }
+]
