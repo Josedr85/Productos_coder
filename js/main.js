@@ -12,8 +12,6 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
-const inputBuscar = document.getElementById("input-buscar");
-const btnBuscar = document.getElementById("btn-buscar");
 
 botonesCategorias.forEach((boton) =>
   boton.addEventListener("click", () => {
@@ -28,12 +26,16 @@ function cargarProductos(productosElegidos) {
     const div = document.createElement("div");
     div.classList.add("producto");
     div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <img class="producto-imagen" src="${producto.imagen}" alt="${
+      producto.titulo
+    }" width="${200}">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
-
+                <p class="producto-descripcion">${producto.descripcion}</p>
                 <p class="producto-precio">$${producto.precio}</p>
-                <button class="producto-agregar" id="${producto.id}">Agregar al carrito</button>
+                <button class="producto-agregar" id="${
+                  producto.id
+                }">Agregar al carrito</button>
             </div>
         `;
 
@@ -42,25 +44,6 @@ function cargarProductos(productosElegidos) {
 
   actualizarBotonesAgregar();
 }
-
-function buscarProductos() {
-  terminoBusqueda = inputBuscar.value.toLowerCase().trim();
-  renderizarProductos();
-}
-
-function renderizarProductos() {
-  // Limpia el contenedor antes de renderizar
-  contenedorProductos.innerHTML = "";
-
-  // Filtra productos según el término de búsqueda
-  const productosFiltrados = productos.filter((producto) => {
-    if (terminoBusqueda === "") return true;
-    // Busca coincidencias en nombre o descripción
-    return (
-      producto.nombre.toLowerCase().includes(terminoBusqueda) ||
-      producto.descripcion.toLowerCase().includes(terminoBusqueda)
-    );
-  });
 
 botonesCategorias.forEach((boton) => {
   boton.addEventListener("click", (e) => {
@@ -82,9 +65,6 @@ botonesCategorias.forEach((boton) => {
     }
   });
 });
-
-
-
 
 function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll(".producto-agregar");
@@ -110,9 +90,9 @@ function agregarAlCarrito(e) {
     text: "Producto agregado",
     duration: 3000,
     close: true,
-    gravity: "top", // `top` or `bottom`
-    position: "right", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
+    gravity: "top",
+    position: "right",
+    stopOnFocus: true,
     style: {
       background: "linear-gradient(to right, #4b33a8, #785ce9)",
       borderRadius: "2rem",
@@ -120,8 +100,8 @@ function agregarAlCarrito(e) {
       fontSize: ".75rem",
     },
     offset: {
-      x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-      y: "1.5rem", // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      x: "1.5rem",
+      y: "1.5rem",
     },
     onClick: function () {}, // Callback after click
   }).showToast();
@@ -156,5 +136,3 @@ function actualizarNumerito() {
   );
   numerito.innerText = nuevoNumerito;
 }
-
-
