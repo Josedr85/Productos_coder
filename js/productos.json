@@ -2,7 +2,7 @@
   {
     "id": "smartphone-01",
     "titulo": "Samsung Galaxy S25 Ultra",
-    "imagen": "../imagenes/smartphone1.png",
+    "imagen": "./imagenes/smartphone1.png",
     "descripcion": " 512gb almacenamiento 12gb Ram Titanium Black Negro AMOLED 6.9 ",
     "categoria": {
       "nombre": "Smartphone",
@@ -13,7 +13,7 @@
   {
     "id": "smartphone-02",
     "titulo": "Xiaomi 14 Ultra",
-    "imagen": "../imagenes/smartphone2.png",
+    "imagen": "./imagenes/smartphone2.png",
     "descripcion": " 512gb almacenamiento 16gb Ram Negro AMOLED 6.73 ",
     "categoria": {
       "nombre": "Smartphone",
@@ -24,7 +24,7 @@
   {
     "id": "smartphone-03",
     "titulo": "Iphone 17 Pro Max",
-    "imagen": "../imagenes/smartphone3 (1).png",
+    "imagen": "./imagenes/smartphone3 (1).png",
     "descripcion": " 512gb almacenamiento 12gb Ram Deep Blue",
     "categoria": {
       "nombre": "Smartphone",
@@ -35,7 +35,7 @@
   {
     "id": "smartphone-04",
     "titulo": "Motorola Edge 50",
-    "imagen": "../imagenes/smartphone4 .png",
+    "imagen": "./imagenes/smartphone4 .png",
     "descripcion": " 512gb almacenamiento 12gb Ram Verde ",
     "categoria": {
       "nombre": "Smartphone",
@@ -46,7 +46,7 @@
   {
     "id": "notebook-01",
     "titulo": "Asus Vivobook GO 15",
-    "imagen": "../imagenes/notebook1.png",
+    "imagen": "./imagenes/notebook1.png",
     "descripcion": "Ryzen 9, RTX 4090, 32GB, 1TB SSD, Gaming.",
     "categoria": {
       "nombre": "Notebook",
@@ -57,7 +57,7 @@
   {
     "id": "notebook-02",
     "titulo": "Lenovo Ideapad Slim 3",
-    "imagen": "../imagenes/notebook2.png",
+    "imagen": "./imagenes/notebook2.png",
     "descripcion": "Intel i7, 16GB RAM, 512GB SSD, Pantalla táctil.",
     "categoria": {
       "nombre": "Notebook",
@@ -68,7 +68,7 @@
   {
     "id": "notebook-03",
     "titulo": "HP 15 FD0032la",
-    "imagen": "../imagenes/notebook3 (1).png",
+    "imagen": "./imagenes/notebook3 (1).png",
     "descripcion": "Intel i9, 32GB RAM, RTX 4060, 4K OLED.",
     "categoria": {
       "nombre": "Notebook",
@@ -79,7 +79,7 @@
   {
     "id": "notebook-04",
     "titulo": "Macbook Pro 16",
-    "imagen": "../imagenes/notebook4.png",
+    "imagen": "./imagenes/notebook4.png",
     "descripcion": "Chip M3 Pro, 16GB RAM, 512GB SSD. Potencia profesional.",
     "categoria": {
       "nombre": "Notebook",
@@ -90,7 +90,7 @@
   {
     "id": "tablet-01",
     "titulo": "Samsung Galaxy Tab s10 FE+",
-    "imagen": "../imagenes/tablet1.png",
+    "imagen": "./imagenes/tablet1.png",
     "descripcion": " 13.1 128gb 8gb ",
     "categoria": {
       "nombre": "Tablet",
@@ -101,7 +101,7 @@
   {
     "id": "tablet-02",
     "titulo": "Lenovo Tab M11",
-    "imagen": "../imagenes/tablet2.png",
+    "imagen": "./imagenes/tablet2.png",
     "descripcion": " 11 128gb 8gb ",
     "categoria": {
       "nombre": "Tablet",
@@ -112,7 +112,7 @@
   {
     "id": "tablet-03",
     "titulo": "Xiaomi Redmi Pad Pro",
-    "imagen": "../imagenes/tablet3.png",
+    "imagen": "./imagenes/tablet3.png",
     "descripcion": " 12.1 128gb 6gb ",
     "categoria": {
       "nombre": "Tablet",
@@ -123,7 +123,7 @@
   {
     "id": "tablet-04",
     "titulo": "Ipad Pro",
-    "imagen": "../imagenes/tablet4.png",
+    "imagen": "./imagenes/tablet4.png",
     "descripcion": " 12.1 128gb 8gb ",
     "categoria": {
       "nombre": "Tablet",
@@ -134,7 +134,7 @@
   {
     "id": "auricular-01",
     "titulo": "Redragon H260 Hylas",
-    "imagen": "../imagenes/auricular1.png",
+    "imagen": "./imagenes/auricular1.png",
     "descripcion": "  auriculares para gamers con sonido estéreo, RGB ",
     "categoria": {
       "nombre": "Auricular",
@@ -145,7 +145,7 @@
   {
     "id": "auricular-02",
     "titulo": "Hiperex Cloud Stringer Core",
-    "imagen": "../imagenes/auricular2 (1).png",
+    "imagen": "./imagenes/auricular2 (1).png",
     "descripcion": " auriculares para gaming de nivel de entrada, ideal para largas sesiones de juego ",
     "categoria": {
       "nombre": "Auricular",
@@ -156,7 +156,7 @@
   {
     "id": "auricular-03",
     "titulo": "Corsair Gamer HS35",
-    "imagen": "../imagenes/auricular3.png",
+    "imagen": "./imagenes/auricular3.png",
     "descripcion": " auriculares de entrada para juegos con conexión por cable jack de 3.5 mm ",
     "categoria": {
       "nombre": "Auricular",
@@ -167,7 +167,7 @@
   {
     "id": "auricular-04",
     "titulo": "Sony Super Bass",
-    "imagen": "../imagenes/auricular4.png",
+    "imagen": "./imagenes/auricular4.png",
     "descripcion": "Auriculares premium, mejor cancelación de ruido.",
     "categoria": {
       "nombre": "Auricular",
@@ -178,7 +178,7 @@
   {
     "id": "smartwatch-01",
     "titulo": "Samsung Galaxy Watch 8",
-    "imagen": "../imagenes/smartwatch1.png",
+    "imagen": "./imagenes/smartwatch1.png",
     "descripcion": "es un smartwatch con pantalla Super AMOLED y un diseño elegante ",
     "categoria": {
       "nombre": "Smartwatch",
@@ -189,7 +189,7 @@
   {
     "id": "smartwatch-02",
     "titulo": "Xiaomi Redmi Watch 5",
-    "imagen": "../imagenes/smartwatch2.png",
+    "imagen": "./imagenes/smartwatch2.png",
     "descripcion": "smartwatch con pantalla AMOLED de 2,07 pulgadas ",
     "categoria": {
       "nombre": "Smartwatch",
@@ -200,7 +200,7 @@
   {
     "id": "smartwatch-03",
     "titulo": "Huawei Watch Fit 4 Pro",
-    "imagen": "../imagenes/smartwatch3.png",
+    "imagen": "./imagenes/smartwatch3.png",
     "descripcion": "reloj inteligente deportivo con diseño ligero, cuerpo de aleación de aluminio y titanio, y pantalla AMOLED de cristal de zafiro",
     "categoria": {
       "nombre": "Smartwatch",
@@ -211,7 +211,7 @@
   {
     "id": "smartwatch-04",
     "titulo": "Apple Watch Ultra 2",
-    "imagen": "../imagenes/smartwatch4.png",
+    "imagen": "./imagenes/smartwatch4.png",
     "descripcion": "Retina OLED LTPO2 de 49 mm con 3000 nits de brillo máximo ",
     "categoria": {
       "nombre": "Smartwatch",
@@ -222,7 +222,7 @@
   {
     "id": "teclado-01",
     "titulo": "Redragon Kumara K552",
-    "imagen": "../imagenes/teclado1.png",
+    "imagen": "./imagenes/teclado1.png",
     "descripcion": "teclado mecánico Tenkeyless (TKL) ",
     "categoria": {
       "nombre": "Teclado",
@@ -233,7 +233,7 @@
   {
     "id": "teclado-02",
     "titulo": "Hiperex Alloy Origins Core",
-    "imagen": "../imagenes/teclado2.png",
+    "imagen": "./imagenes/teclado2.png",
     "descripcion": " teclado mecánico compacto (TKL) y robusto, diseñado para gaming  ",
     "categoria": {
       "nombre": "Teclado",
@@ -244,7 +244,7 @@
   {
     "id": "teclado-03",
     "titulo": "Corasair Cherry Mx Speed",
-    "imagen": "../imagenes/teclado3.png",
+    "imagen": "./imagenes/teclado3.png",
     "descripcion": "Un teclado mecánico para juegos con interruptores Cherry MX Speed y una estructura de aluminio. ",
     "categoria": {
       "nombre": "Teclado",
@@ -255,7 +255,7 @@
   {
     "id": "teclado-04",
     "titulo": "Logitech Serie G Prodigy G213",
-    "imagen": "../imagenes/teclado4.png",
+    "imagen": "./imagenes/teclado4.png",
     "descripcion": " teclado para juegos de membrana con un diseño duradero, resistencia a salpicaduras ",
     "categoria": {
       "nombre": "Teclado",
@@ -266,7 +266,7 @@
   {
     "id": "mouse-01",
     "titulo": "Logitech Series Mx Master 3s",
-    "imagen": "../imagenes/mouse1 (1).png",
+    "imagen": "./imagenes/mouse1 (1).png",
     "descripcion": "ratón inalámbrico ergonómico diseñado para la productividad, con un sensor de alta precisión ",
     "categoria": {
       "nombre": "Mouse",
@@ -277,7 +277,7 @@
   {
     "id": "mouse-02",
     "titulo": "Redragon Griffin M607 ",
-    "imagen": "../imagenes/mouse2.png",
+    "imagen": "./imagenes/mouse2.png",
     "descripcion": "mouse gamer alámbrico con sensor óptico Pixart P3212, 7 botones programables, retroiluminación RGB Chroma y hasta 7200 DPI. ",
     "categoria": {
       "nombre": "Mouse",
@@ -288,7 +288,7 @@
   {
     "id": "mouse-03",
     "titulo": "Corsair Scimitar RGB Elite",
-    "imagen": "../imagenes/mouse3.png",
+    "imagen": "./imagenes/mouse3.png",
     "descripcion": "ratón para juegos diseñado para géneros MMO/MOBA, que destaca por sus 17 botones programables  ",
     "categoria": {
       "nombre": "Mouse",
@@ -299,7 +299,7 @@
   {
     "id": "mouse-04",
     "titulo": "MSI Forge GM300",
-    "imagen": "../imagenes/mouse4.png",
+    "imagen": "./imagenes/mouse4.png",
     "descripcion": " mouse para juegos con un sensor óptico de hasta 7200 DPI ajustables en 4 niveles ",
     "categoria": {
       "nombre": "Mouse",
